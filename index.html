@@ -529,7 +529,7 @@
    		<div class="col-twelve">
 
    			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
+   			<h1>I'd love to hear from you.</h1>
 
    			<p class="lead"></p>
 
@@ -594,9 +594,9 @@
    			<h5>Where to find me</h5>
 
    			<p>
-            14 Shubhlaxmi Society<br>
-            Isanpur<br>
-            Ahmedabad
+            413 Summit Ave<br>
+            Arlington<br>
+            Texas
             </p>
 
    		</div>-->
@@ -609,8 +609,35 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>meet.bhatt@mavs.uta.edu<br>
-			</p>
+   			<!--<p>meet.bhatt@mavs.uta.edu<br>
+			</p>-->
+		
+		<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+			<script type="text/javascript">
+            $(function () {
+		      $('.SendEmail').click(function (event) {
+		        var email = 'meet.bhatt@mavs.uta.edu';
+		        var subject = '';
+		        var emailBody = 'Dear Meet,';
+		        var attach = 'path'; 
+		        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+		      });
+		    });
+		    </script>
+		    <style>
+			    p{
+			        cursor: pointer;
+			    }
+			</style>
+				<body>
+					 <nav>
+	                	<ul>
+                             <a href="#"><p class="SendEmail">meet.bhatt@mavs.uta.edu<br></p> 
+			</ul>
+			</nav>	
+	</body>
+		
+		
 			   
 							 <!-- Social Link -->
                             <a href="https://www.facebook.com/meet.bhatt.35/"target="_blank"><i class="fa fa-facebook" style="font-size:25px;color:#4a95cc;"></i></a>
